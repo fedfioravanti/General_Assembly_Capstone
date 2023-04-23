@@ -1,4 +1,13 @@
-# General_Assembly_Capstone
+<img src="http://imgur.com/1ZcRyrc.png" style="float: left; margin: 20px; height: 55px">
+
+# General Assembly - Data Science Immersive
+
+---
+
+Capstone Project
+
+# Predicting delayed flights and improving operational performance
+
 
 ## Overview
 This project was completed as the final capstone of my Data Science Immersive bootcamp at General Assembly in London. This document explains the background, the objectives, the methodologies, the conclusions and the tools used. The topic of flight delays was selected due to personal and professional interests within the aviation industry.
