@@ -1,32 +1,23 @@
-<img src="http://imgur.com/1ZcRyrc.png" style="float: left; margin: 20px; height: 55px">
-
 ![](images/01_cover.png?raw=true)
 
-# General Assembly - Data Science Immersive
-
----
-
-Capstone Project
-
-# Predicting delayed flights and improving operational performance
 
 
 ## Overview
-This project was completed as the final capstone of my Data Science Immersive bootcamp at General Assembly in London. This document explains the background, the objectives, the methodologies, the conclusions and the tools used. The topic of flight delays was selected due to personal and professional interests within the aviation industry.
+This project was completed as the final capstone of my Data Science Immersive bootcamp at General Assembly in London.  
+This document explains the background, the objectives, the methodologies, the conclusions and the tools used. The topic of flight delays was selected due to personal and professional interests within the aviation industry.
+
 
 
 ## Table of Contents
 
-Background
-Objectives
-Data Acquisition
-Data Preparation & Cleaning
-Feature Engineering
-Exploratory Data Analysis
-Modelling
-Limitations
-Conclusion
 
+* Background
+* Objectives
+* Data Collection
+* Data Preparation & Cleaning
+* Feature Engineering
+* Exploratory Data Analysis
+* Modelling
 
 
 
@@ -51,7 +42,46 @@ The goals of this project is to create a classification model which can:
 
 The data used for this project come from the operational database of a major international airport containing all the flights made in 2013. Furthermore, I collected the hourly meteorogical data from the Open-Meteo website.  
 The raw data consisted of almost 195,000 flights and 39 features.  
+
+
+## Data Preparation & Cleaning
+
+The original operational database had many missing values, with several things to fix. Before merging it with the weather dataset, I had to make sure that both time columns used as keys were formatted the same.
+All work was done in Python on Jupyter notebooks, and the processing revolved around:
+
+* Identifying variables relevant to modelling, and which ones to drop.
+* Creating datetime column objects.
+* Interpreting continuous and categorical features.
+* Converting several features into binary variables.
+* Creating more model-friendly feature names.
+* Translating some feature values into English.
+* Exploring opportunities for new feature creation.
+* Looking for erroneous or missing data.
+* Imputing values.
+* Removing outliers.
+* Creating the target variable.
+
+
+## Exploratory Data Analysis
+
+The EDA process did not reveal meaningful correlations between the different variables.  
+Before moving to the modelling stage, I explored some of the trends within the data, including the relative delays per hour, day, month, airline, aircraft type, service type, country of arrival and country of destination.
+
+
+## Modelling
+
+Since my target was categorical, I had to fit a classification model; the baseline accuracy, the percentage of the majority class, was 0.7375.
+After dummification most predictors were categorical, however there were few continuous variables. I performed a stratified train/test split and rescaled the training set before running the models.
+A range of models were first tested on the dataset: Logistic Regression, K-Nearest Neighbours Classifier, Decision Tree Classifier, Random Forest Classifier, Extra Trees Classifier, Support Vector Machine Classifier, AdaBoost Classifier, Gradient Boosting Classifier, Naïve Bayes Classifier and Multi-layer Perceptron Classifier.
+
+The best performing model in the first stage was Gradient Boosting Classifier, which achieved a CV score of 0.7756.
+Logistic Regression was second best with a CV score of 0.7619. 
+
+
+
 <br/><br/>
+
+
 
 
 ***
