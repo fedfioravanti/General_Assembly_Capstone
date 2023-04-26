@@ -1,5 +1,7 @@
 <img src="http://imgur.com/1ZcRyrc.png" style="float: left; margin: 20px; height: 55px">
 
+![](images/01_cover.png?raw=true)
+
 # General Assembly - Data Science Immersive
 
 ---
