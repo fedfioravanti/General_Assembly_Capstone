@@ -5,4 +5,4 @@ datasets/
 */.ipynb_checkpoints/*
 
 # ignore Jupyter notebook checkpoints (UPDATE)
-.ipynb_checkpoints
+.ipynb_checkpoints/
