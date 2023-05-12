@@ -3,13 +3,13 @@
 
 
 ## Overview
+
 This project was completed as the final capstone of my Data Science Immersive bootcamp at General Assembly in London.  
 This document explains the background, the objectives, the methodologies, the conclusions and the tools used. The topic of flight delays was selected due to personal and professional interests within the aviation industry.
 
 
 
 ## Table of Contents
-
 
 * Background
 * Objectives
@@ -64,7 +64,11 @@ All work was done in Python on Jupyter notebooks, and the processing revolved ar
 
 ## Exploratory Data Analysis
 
-The EDA process did not reveal meaningful correlations between the different variables.  
+![alt text](./images/01_heatmap_01.png "Heatmap of correlations between continuous variables")
+![alt text](./images/04_boxplot_01.png "Box plots of continuous variables")
+
+The EDA process did not reveal meaningful correlations between the different variables and the delay.  
+
 Before moving to the modelling stage, I explored some of the trends within the data, including the relative delays per hour, day, month, airline, aircraft type, service type, country of arrival and country of destination.
 
 
