@@ -84,7 +84,7 @@ Initial EDA did not reveal meaningful correlations between the different variabl
 Some variables show a large amount of outliers, and delays account for roughly 17% of total flights, which is in line with industry average.  
 <p float="left">
   <img src="./images/06_total_month.png" width="59%" />
-  <img src="./images/07_total_day.png" width="39%" />
+  <img src="./images/07_total_day.png" width="40%" />
 </p>
 
   ![alt text](./images/08_total_hour.png "Average Flights per Hour")
@@ -94,7 +94,7 @@ On average, flights are most frequent on Fridays and least frequent on Tuesdays 
 
 <p float="left">
   <img src="./images/10_rel_delay_month.png" width="59%" />
-  <img src="./images/12_rel_delay_day.png" width="39%" />
+  <img src="./images/12_rel_delay_day.png" width="40%" />
 </p>
 
   ![alt text](./images/14_rel_delay_hour.png "Flight Delays by Hour - Relative")
@@ -113,9 +113,29 @@ A range of models were first tested on the dataset: Logistic Regression, K-Neare
 The best performing model in the first stage was Gradient Boosting Classifier, which achieved a CV score of 0.7756.
 Logistic Regression was second best with a CV score of 0.7619. 
 
-
-
 <br/><br/>
+
+
+## Limitations
+
+
+
+
+
+
+
+
+
+## Conclusion
+
+
+
+
+
+## Future Work
+
+
+
 
 
 
