@@ -1,4 +1,4 @@
-![](images/01_cover.png?raw=true)
+![](images/00_cover.png?raw=true)
 
 
 
@@ -67,9 +67,21 @@ All work was done in Python on Jupyter notebooks, and the processing revolved ar
 ![alt text](./images/01_heatmap_01.png "Heatmap of correlations between continuous variables")
 ![alt text](./images/04_boxplot_01.png "Box plots of continuous variables")
 
-The EDA process did not reveal meaningful correlations between the different variables and the delay.  
+Initial EDA did not reveal meaningful correlations between the different variables and the delay.  
+Some variables show a large amount of outliers, and delays account for roughly 17% of total flights, which is in line with industry average.  
+  ![alt text](./images/06_total_month.png "Total Flights per Month")
+  ![alt text](./images/07_total_day.png "Average Flights per Weekday")
+  ![alt text](./images/08_total_hour.png "Average Flights per Hour")
+
+Flights are most frequent in August and least frequent in February during the year, showing a clear seasonality over the summer months.  
+On average, flights are most frequent on Fridays and least frequent on Tuesdays during the week, with the daily peak being at 16:00 and the lowest at 03:00.
+
+  ![alt text](./images/10_rel_delay_month.png "Flight Delays by Month - Relative")
+  ![alt text](./images/12_rel_delay_day.png "Flight Delays by Weekday - Relative")
+  ![alt text](./images/14_rel_delay_hour.png "Flights Delays by Hour - Relative")
 
 Before moving to the modelling stage, I explored some of the trends within the data, including the relative delays per hour, day, month, airline, aircraft type, service type, country of arrival and country of destination.
+
 
 
 ## Modelling
