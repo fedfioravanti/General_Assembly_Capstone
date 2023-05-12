@@ -69,10 +69,11 @@ All work was done in Python on Jupyter notebooks, and the processing revolved ar
 
 Initial EDA did not reveal meaningful correlations between the different variables and the delay.  
 Some variables show a large amount of outliers, and delays account for roughly 17% of total flights, which is in line with industry average.  
-| ------------------------------------------------------ | ------------------------------------------------------- | 
-|![Total Flights per Month](./images/06_total_month.png) |![Average Flights per Weekday](./images/07_total_day.png)|  
-  
-  
+<p float="left">
+  <img src="./images/06_total_month.png" width="60%" />
+  <img src="./images/07_total_day.png" width="40%" />
+</p>
+
   ![alt text](./images/08_total_hour.png "Average Flights per Hour")
 
 Flights are most frequent in August and least frequent in February during the year, showing a clear seasonality over the summer months.  
