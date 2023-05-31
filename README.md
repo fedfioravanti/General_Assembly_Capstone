@@ -106,12 +106,17 @@ Before moving to the modelling stage, I explored some of the trends within the d
 
 ## Modelling
 
-Since my target was categorical, I had to fit a classification model; the baseline accuracy, the percentage of the majority class, was 0.7375.
-After dummification most predictors were categorical, however there were few continuous variables. I performed a stratified train/test split and rescaled the training set before running the models.
+Since my target was categorical, I had to fit a classification model; the baseline accuracy, the percentage of the majority class, was 0.7375, which reflect a high skewness.
+After dummification most predictors were categorical, however there were few continuous variables. I performed a stratified train/test split and rescaled the training set before running the models.  
+
 A range of models were first tested on the dataset: Logistic Regression, K-Nearest Neighbours Classifier, Decision Tree Classifier, Random Forest Classifier, Extra Trees Classifier, Support Vector Machine Classifier, AdaBoost Classifier, Gradient Boosting Classifier, Naïve Bayes Classifier and Multi-layer Perceptron Classifier.
 
-The best performing model in the first stage was Gradient Boosting Classifier, which achieved a CV score of 0.7756.
-Logistic Regression was second best with a CV score of 0.7619. 
+The best performing model in the first stage was Gradient Boosting Classifier, which achieved a CV score of 0.7756, and Logistic Regression was second best with a CV score of 0.7619.  
+
+After the initial model testing I further investigated both models using GridSearchCV.
+Gradient Boosting Classifier achieved the final CV score of 0.7805
+
+
 
 <br/><br/>
 
@@ -140,4 +145,3 @@ Logistic Regression was second best with a CV score of 0.7619.
 
 
 
-***
