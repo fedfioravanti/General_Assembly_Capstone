@@ -114,7 +114,7 @@ A range of models were first tested on the dataset: Logistic Regression, K-Neare
 The best performing model in the first stage was Gradient Boosting Classifier, which achieved a CV score of 0.7756, and Logistic Regression was second best with a CV score of 0.7619.  
 
 After the initial model testing I further investigated both models using GridSearchCV.
-Gradient Boosting Classifier achieved the final CV score of 0.7805
+Gradient Boosting Classifier achieved the final CV score of 0.7805 and tended to overpredict the majority class.
 
 
 
