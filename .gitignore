@@ -1,11 +1,5 @@
 # ignore files in ANY directory named datasets
 datasets/
-
-# ignore files in ANY directory named SS
 SS/
-
-# ignore Jupyter notebook checkpoints
 */.ipynb_checkpoints/*
-
-# ignore Jupyter notebook checkpoints (UPDATE)
 .ipynb_checkpoints/
