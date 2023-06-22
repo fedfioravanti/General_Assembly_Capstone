@@ -1,4 +1,4 @@
-# ignore files in ANY directory named datasets
+# ignore files in ANY directory named datasets, SS...
 datasets/
 SS/
 .ipynb_checkpoints/
