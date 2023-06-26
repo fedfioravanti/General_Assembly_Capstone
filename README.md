@@ -123,15 +123,15 @@ Gradient Boosting Classifier achieved the final CV score of 0.7805 and tended to
 
 ## Limitations
 
+The main limitations to this project come from the original operational dataset: it contains some apparently contradictory features for which very little information is available.
+Another limitation was that this dataset did not include any information about the actual delay time, but we could only infer the flight status. Additional work could be aimed at matching every flight with the relative apron spot and gate in the terminal building: this could help in creating a geospatial analysis to improve efficiency of airport facilities.  
 
 
-
-
-
-
-
+<br/><br/>
 
 ## Conclusion
+
+
 
 
 
