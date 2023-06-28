@@ -13,15 +13,15 @@ This document explains the background, the objectives, the methodologies, the co
 
 ## Table of Contents
 
-[Background](#Background) 
-[Objectives](#Objectives) 
-[Data Collection](#Data-Collection) 
-[Data Preparation & Cleaning](#Data-Preparation-&-Cleaning)
-[Exploratory Data Analysis](#Exploratory-Data-Analysis)
-[Modelling](#Modelling)
-[Limitations](#Limitations)
-[Conclusion](#Conclusion)
-[Future Work](#Future-Work)
+[Background](#Background)  
+[Objectives](#Objectives)  
+[Data Collection](#Data-Collection)  
+[Data Preparation & Cleaning](#Data-Preparation-&-Cleaning)  
+[Exploratory Data Analysis](#Exploratory-Data-Analysis)  
+[Modelling](#Modelling)  
+[Limitations](#Limitations)  
+[Conclusion](#Conclusion)  
+[Future Work](#Future-Work)  
 [Contact](#Contact)  
 
 
