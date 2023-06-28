@@ -13,17 +13,19 @@ This document explains the background, the objectives, the methodologies, the co
 
 ## Table of Contents
 
-* Background
-* Objectives
-* Data Collection
-* Data Preparation & Cleaning
-* Feature Engineering
-* Exploratory Data Analysis
-* Modelling  
+[Background](#Background) 
+[Objectives](#Objectives) 
+[Data Collection](#Data-Collection) 
+[Data Preparation & Cleaning](#Data-Preparation-&-Cleaning)
+[Exploratory Data Analysis](#Exploratory-Data-Analysis)
+[Modelling](#Modelling)
+[Limitations](#Limitations)
+[Conclusion](#Conclusion)
+[Future Work](#Future-Work)
+[Contact](#Contact)  
+
 
 <br/><br/>
-
-
 
 ## Background
 
@@ -33,8 +35,6 @@ Delays also drive the need for additional airport gates and ground staff and imp
 The aviation ecosystem would be really interested in finding the factors that have the biggest impact on flight delays, so that they can be addressed from an operational point of view. In this scenario, it is important to analyse an international airport connected to a large number of destinations.  
 
 <br/><br/>
-
-
 
 ## Objectives
 
@@ -67,8 +67,6 @@ All work was done in Python on Jupyter notebooks, and the processing revolved ar
 * Translating some feature values into English.
 * Exploring opportunities for new feature creation.
 * Looking for erroneous or missing data.
-* Imputing values.
-* Removing outliers.
 * Creating the target variable.  
 
 <br/><br/>
@@ -106,7 +104,7 @@ Before moving to the modelling stage, I explored some of the trends within the d
 
 ## Modelling
 
-Since my target was categorical, I had to fit a classification model; the baseline accuracy, the percentage of the majority class, was 0.7375, which reflect a high skewness.
+Since my target was categorical, the project was made into a classification problem with two rather unbalanced classes; the baseline accuracy, the percentage of the majority class, was 0.7375, which reflect a high skewness.
 After dummification most predictors were categorical, however there were few continuous variables. I performed a stratified train/test split and rescaled the training set before running the models.  
 
 A range of models were first tested on the dataset: Logistic Regression, K-Nearest Neighbours Classifier, Decision Tree Classifier, Random Forest Classifier, Extra Trees Classifier, Support Vector Machine Classifier, AdaBoost Classifier, Gradient Boosting Classifier, Naïve Bayes Classifier and Multi-layer Perceptron Classifier.
@@ -133,17 +131,30 @@ Additional work could be aimed at matching every flight with the relative apron 
 
 ## Conclusion
 
+The nature of this project was primarily exploratory, so no hypothesis were made about which factor could have the greatest impact on a delayed flight.  
+
+The final parameters tuning using GridSearchCV gave an accuracy score of 0.7973 and a CV score of 0.7805: however the model was overfitting and biased towards the majority class, which showed a good precision score and a very good recall score. The average precision score and the bad recall score for the minority class confirmed the unbalanced behaviour of the model.  
+
+The time of the flight and the baggage weight seem to be the most important factors in a delay, which was partly reflected in the previous EDA.  
 
 
-
-
-
+<br/><br/>
 
 ## Future Work
 
+To further improve the current work, the following steps should be taken:
+* Feature Engineering, with the creation of additional features such as aircraft size category and aircraft typology.
+* Imputing values where missing, to avoid the removal of entire observations.
+* Removing outliers, after further analysis and due diligence of the plausible values.
+* Splitting the dataset between arriving and departing flights, examining whether the accuracy and the effectiveness of the model could be enhanced.
+* Employing XGBoost and additional classifiers, checking the effects on the model's performance.  
 
 
+<br/><br/>
+
+## Contact
+Interested in discussing my project further?  
+Please feel free to contact me on [LinkedIn](https://www.linkedin.com/in/fedfioravanti/).  
 
 
-
-
+<br/><br/>
